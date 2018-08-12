@@ -1,0 +1,41 @@
+<!--O seguinte estudo foi feito em pelo site w3schools.com -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+		</title>
+		<script>
+			//exemplo de funçao que muda o texto 
+			function myFunction(){
+				document.getElementById("p1").innerHTML =  "A paragraph changed.";
+			}
+		</script>
+	</head>
+	<body>
+
+		<h1>Estudo sobre JavaScript</h1>
+
+		<h2>Exemplo função</h2>
+		<p id="p1">Um texto normal</p>
+		<button type="button" onclick="myFunction()">Mudar texto</button>
+
+		<!-- Escrevendo com javascript-->
+
+		<h2>Escrevendo com javascript </h2>
+
+		<p id="demo"></p>
+		<script>
+			document.getElementById("demo").innerHTML = 5+10; //aqui escrevemos em um elemento html usando o innerHTML
+			document.write(10+10); //aqui escrevemos usando document.write()
+			//Usando document.write() depois que um documento HTML estiver totalmente carregado, irá apagar todo o HTML existente
+			//window.alert(2+3); //aqui aparece uma pequena janela de alerta no navegador com a mensagem que escrevemos
+			console.log(3+3);
+		</script>
+
+
+		<h2>Sintaxe</h2>
+		<p>Em java script stringssão escritas tanto em aspas duplas como simples</p>
+		<p>JavaScript é sensível a maiúsculas</p>
+		<p></p>
+	</body>
+</html>

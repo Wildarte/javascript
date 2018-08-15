@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Teste</title>
+
+	<!-- documento externo Java Script scrip.js(mas pode ser qualquer nome) -->
+	<script src="script.js"></script>
+
+	</head>
+	
+	<!-- <script language="javascript"></script> -->
+	
+	<body>
+	
+		<input type="submit" onclick="alert('dededededed')">
+		
+		
+		
+
+		<h2>Variáveis</h2>
+
+		<p>Valor 1 = <script>document.write(v1)</script></p>
+		<p>valor 2 = <script>document.write(v2)</script></p>
+		<p>Soma = <script>document.write(total)</script></p>
+		
+		<p id="name"></p>
+
+		<script>
+			var nome1;
+			nome1 = "João";
+			var nome2;
+			nome2 = "Maria";
+			document.getElementById("name").innerHTML = nome1+" "+nome2;//aqui foi feita uma operação com duas strings
+		</script>
+
+		<h2>Operadores</h2>
+
+		<script>
+
+			//varias operações em javascript
+			var num1 = 1;
+			var num2 = 5;
+			var nome = "Anacleto"+num1+num2;
+
+
+			var  somaTudo = nome+num1;
+
+			document.write(somaTudo);
+
+		</script>
+
+		<h2>Tipos de Dados</h2>
+
+		<script>
+			
+			var length = 16;  // Number
+			var lastName = "Jhonson";  //String
+			var x = {firstName: "Jhon", lastName: "Doe"};  //Object
+			var dec = 5.123e-6; //0.000005123
+			var x = 123e5; // 12300000
+			var y = 123e-5; // 0.00123
+
+			document.write(dec);
+
+			//booleans
+
+			var a = 2;
+			var b = 2;
+			(a == b);  //retorna verdadeiro
+
+			document.write(a == b);
+
+			//arrays
+			var ar = ["fusca", "BMW", "Jaguar"];
+			document.write(ar[1]); //escreve BMW na tela
+
+
+			document.write("<br>"); //pula para linha de baixo
+			
+			
+			//objects
+			var person = {firstName: "Jhon", lastName: "Doe", age:50, eyeColor:"blue"}
+			document.write(person.firstName);
+			
+
+			document.write("<br>"); //pula para linha de baixo
+			
+			
+			//typeof retorna o tipo da variavel ou expressão
+			typeof ""; //retorna 'string'
+			typeof 2; // retorna 'number'
+			document.write(typeof 0); 
+			
+			
+			//em java script uma variavel sem valor, tem  valor undefined. E o typeof também é undefined
+			var car;
+			
+			
+			//um valor vazio nao tem nada a ver com undefined
+			//uma string vazia tem um valor legal e um tipo
+			var car = "";
+
+			document.write("<br>"); //pula pra minha de baixo
+
+			
+			//Em javascript null é nada, é suposto ser algo que não existe
+			//Em javascript o tipo de dados null é um objeto
+			document.write(typeof null); //isso retorna o tipo object
+
+			document.write("<br>");
+
+			
+			//você pode definir uma variável com valor ndefined
+			var person = undefined;
+			document.write(person);
+
+
+			//diferença entre undefined e null
+			//undefined e nullsão iguais em valores e diferentes em tipos
+			typeof undefined; //undefined
+			typeof null;	//object
+
+			null === undefined; //retorna false por que os tipos são diferentes
+			null == undefined; //retorna true por que os valores são iguais
+
+
+
+			//Data primitive
+			//um valor de dados primitivos é um único valor de dados simples, sem propriedades e métodos adicionais
+			//o operador typeof pode retornar um destes tipos primitivos: string, number, boolean, undefined.
+			typeof "Jhon"; //returns "string"
+			typeof 3.14;   //returns "number"
+			typeof true;   //returns "boolean"
+			typeof false;  //returns "boolean"
+			typeof x;      //returns "undefined"
+
+			document.write("<br>");
+
+
+			//o operador pode retornar um dos dois tipos complexos: function, object
+			//o operador typeof retorna objeto para os dois objetos	, array e null
+			//o operador typeof nao retorna objetos para functions
+			typeof {name:"Andrew", age:12};  //returns "object"
+			typeof [1,2,3,4];				 //returns "object"
+			typeof null;					 //returns "object"
+			typeof function myFunc(){};		 //returns "functions"
+			
+
+
+
+			
+
+			/* ******************************************************************
+			*	              Parei em functions          					  * 
+			****************************************************************** */
+		
+		</script>
+
+		<!-- se você clicar neste botão irá apagar todo o conteúdo acima e colocar a soma dos valores que estão dentro de document.write()
+			o método document.write() deve ser usado para testes //-->
+		<p><button type="button" onclick="document.write(5 + 6)">Try it</button></p>
+
+	</body>
+</html
